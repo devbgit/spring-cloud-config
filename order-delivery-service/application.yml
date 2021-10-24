@@ -15,8 +15,20 @@ spring:
             non_contextual_creation: true
             
 management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
   endpoints:
     web:
       exposure:
         include:
           - "*"
+info:
+  build:
+    groupId: '@project.groupId@'
+    artifactId: '@project.artifactId@'
+    version: '@project.version@'
+  java:
+    version: '@java.version@'          
