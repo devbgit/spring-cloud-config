@@ -16,11 +16,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8770/eureka
-
-#actuator properties
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-          - "*"
